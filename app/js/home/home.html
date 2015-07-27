@@ -1,0 +1,13 @@
+<div ng-bind-html="home.content | html"></div>
+
+<ul>
+	<li ng-repeat="item in menu.items">
+		{{ item }}
+		<a ui-sref="{{ item.url | shortUrl }}">{{ item.title }}</a>
+	</li>
+</ul>
+
+
+<div>
+	{{ home.cfs }}
+</div>
