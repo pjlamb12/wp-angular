@@ -16,11 +16,10 @@ angular.module('myApp.home',
 			}
 		});
 })
-.controller('HomeController', function($scope, home, menu){
+.controller('HomeController', function($scope, home, menu, CustomPost){
 	$scope.hello = "Hello!";
 
 	$scope.home = home;
 
 	$scope.menu = menu;
-
 });
